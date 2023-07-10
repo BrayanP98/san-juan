@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <title>menu_lateral</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo_content">
+            <div  class="logo">
+                <i class='bx bxs-heart'></i>
+
+                 <div class="logo_name">San Juan</div>
+                </div>
+      <!--icon btn--><i class='bx bx-menu' id="btn"></i>
+           
+            </div>
+
+            <div class="src">
+
+    <!--icon src--><i class='bx bx-search-alt-2' ></i>
+
+                <input type="text" placeholder="search">
+            </div>
+        <ul class="nav">
+            <li>
+                <a href="#" id="item_camera">
+  <!--icon nav--><i class='bx bx-bar-chart-square'></i>
+
+                  <span class="link_name">Camaras de seguridad</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+               
+                
+            </li>
+            <li>
+                <a href="">
+                    <!--icon nav-->
+                    
+                    <i class='bx bx-chart' ></i>
+
+                    <span class="link_name">GPS</span>
+                </a>
+                <span class="tooltip">Workout Statics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <!--icon nav-->
+                    <i class='bx bxs-calendar' ></i>
+              <span class="link_name">Alarmas seguridad</span>
+                </a>
+                   <span class="tooltip">Workout plans</span>
+            </li>
+            <li>
+                <a href="">
+                    <!--icon nav-->
+                    <i class='bx bxs-map-alt' ></i>
+                <span class="link_name">Controles de acceso</span>
+                </a>
+                <span class="tooltip">Distance Map</span>
+            </li>
+            <li>
+                <a href="">
+                    <!--icon nav-->
+                    <i class='bx bx-book-heart' ></i>
+                    <span class="link_name">Mantenimiento de pc</span>
+                </a>
+              <span class="tooltip">Dine menu food</span>
+            </li>
+            <li>
+                <a href="">
+                    <!--icon nav-->
+                    <i class='bx bx-pie-chart' ></i>
+                    <span class="link_name">Accesorios</span>
+                </a>
+                <span class="tooltip">Personal Record</span>
+            </li>
+        </ul>
+    </div>
+<div class="home_conten">
+        <div class="text">Home content</div>
+    </div>
+<script>
+    let btn= document.querySelector('#btn')
+    let sidebar= document.querySelector('.sidebar');
+    let srcBtn=document.querySelector('.bx-search-alt-2');
+
+    btn.onclick= function(){
+        sidebar.classList.toggle('active');
+
+    }
+    srcBtn.onclick= function(){
+
+        sidebar.classList('active');
+    }
+
+
+</script>
+<script src="js/index.js" ></script>
+</body>
+
+</html>
