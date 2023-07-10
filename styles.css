@@ -308,6 +308,8 @@ header{
     background: #c7f010;
     text-align: center;
     gap: 18px;
+    position: absolute;
+    width: 80%;
     }
 .menu li{
     height: 20px;
