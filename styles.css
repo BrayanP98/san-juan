@@ -330,7 +330,7 @@ header{
     position: absolute;
     border: 0;
     visibility: hidden;
-    top: 100px;
+    top: 70px;
     cursor: pointer;
     font-size: 35px;
     height: 1px;
@@ -338,7 +338,7 @@ header{
     text-align: center;
     z-index: 1000;
     background-color: #c7f010;
-    right: 100px;
+    right: 70px;
   }
 
 .container{
