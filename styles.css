@@ -344,7 +344,7 @@ header{
 .container{
     width: 99%;
     height: fit-content;
-    background: rgb(234, 230, 230);
+    background: white;
     margin-top: 55px;
    
 }
