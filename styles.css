@@ -386,6 +386,7 @@ font-weight: bolder;
     flex-wrap: wrap;
     gap: 15px;
     border-bottom: 1px solid gray;
+    justify-content: center;
 }
 #our_marcas img{
 
