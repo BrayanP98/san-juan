@@ -1,15 +1,8 @@
-/*var item_camera= document.querySelector(".nav");
+var toogle_menu=document.querySelector("#toogle_menu");
+var menu=document.querySelector(".menu")
+toogle_menu.onclick=function(){
+menu.classList.toggle('active')
 
-//console.log(item_camera.children)
-
-for(let i=0; i<item_camera.children.length;i++){
-   var hijo=item_camera.children[i]
-        hijo.children[0].onclick=function(){
-
-            alert("333")
-        }
-
-}*/
-console.log("wwww")
+}
 
 

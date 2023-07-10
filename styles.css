@@ -301,6 +301,14 @@ header{
    
    
 }
+.menu.active{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background: #c7f010;
+    text-align: center;
+    gap: 18px;
+    }
 .menu li{
     height: 20px;
     border-bottom: 1px solid white;
@@ -392,3 +400,27 @@ font-weight: bolder;
     width: 200px;
     height: 150px;
 }
+
+
+
+@media only screen
+and (min-device-width: 520px)
+and (max-device-width: 856px)
+
+{
+    .menu{
+      display: none;
+    
+    }
+    .menu li{
+        border-bottom:0px ;
+      
+      }
+
+#toogle_menu{
+    visibility: visible;
+}
+    
+    
+
+}}
