@@ -441,7 +441,7 @@ font-weight: bolder;
     display: flex;
     position: relative;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     height: 250px;
     overflow: hidden;
     overflow-x: scroll;
