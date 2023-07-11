@@ -263,6 +263,9 @@ header{
    
 }
 #logo{
+    left: 15px;
+    position: relative;
+    top: 8px;
     width:200px;
     height: 150px;
    
@@ -440,6 +443,15 @@ and (max-device-width: 856px)
     visibility: visible;
     color: white;
 }
+#logo img{
+    width:60%;
+    height: 60%;
+}
+header{
+    
+    height: 250px;
+}
+   
     
     
 
