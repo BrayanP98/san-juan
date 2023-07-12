@@ -298,6 +298,11 @@ header{
      content: "S";
      color: #c7f010;
  }
+ #title_logo1::before{
+    content: "E";
+    color: #c7f010;
+}
+ 
 .menu{
     width: 70%;
     height: 50px;
