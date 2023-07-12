@@ -276,20 +276,28 @@ header{
     height: 100%;
 }
 
-#logo p{
-    width:300px;
-   position: relative;
-   color: aliceblue;
-   left: 20px;
-   font-size: 20px;
-   font-weight: bolder;
-
-    
-}
-#logo p::before{
-    content: "S";
-    color: #c7f010;
-}
+#title_logo{
+    position: relative;
+    color: aliceblue;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+ 
+     
+ }
+ #title_logo1{
+    position: relative;
+    color: aliceblue;
+    left: 45px;
+    font-size: 15px;
+    font-weight: bolder;
+ 
+     
+ }
+ #title_logo::before{
+     content: "S";
+     color: #c7f010;
+ }
 .menu{
     width: 70%;
     height: 50px;
