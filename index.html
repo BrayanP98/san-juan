@@ -11,8 +11,9 @@
 </head>
 <body>
     <div id="lateral">
-        <h3>San Juan</h3>
-        <h5>Electronics</h5>
+        <div id="logo_menu">
+            <img src="img/sanjuan.png" alt=""></div>
+        
         <div class="src">
 
         <i class='bx bx-search-alt-2' ></i>
@@ -20,8 +21,8 @@
            </div>
        
         <ul class="menu_lateral">
-            <li>
-                <a href=""> <box-icon name='home-alt'></box-icon>Inicio</a>
+            <li class="item_menu">
+                <a href="/"> <box-icon name='home-alt'></box-icon>Inicio</a>
             </li>
             <li>
                 <a href=""> 
@@ -280,10 +281,11 @@
 
         }
         .contact_item{
-            width: 100%;
-            color:yellow;
            
+            color:yellow;
+           text-decoration: none;
             font-family: "Rubik", Sans-serif;
+            
             
            
         }
@@ -347,12 +349,32 @@
         </div>
     
     </div>
+    <style>
+        #celphone{
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            padding: 0;
+            margin: 0;
+           
+        }
+        .contact_icon{
+            
+            vertical-align: middle;
+
+        }
+    </style>
     <div id="contact_footer">
         <h3>Contacto</h3>
-        <p class="contact_item">3022456227 - 300 6549863</p>
-        
-        <a class="contact_item"href="mailto:sanjuanelectronics@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail">sanjuanelectronics@gmail.com</a>
-        <p class="contact_item">Transversal 9#57 N 202 , Popayán, Colombia</p>
+
+        <div id="celphone">
+           
+            <a class="contact_item" href="tel:+573022456227"> <box-icon name='phone'class="contact_icon" color='#f9f906' ></box-icon>3022456227</a>
+            <p>-</p>
+            <a class="contact_item"href="tel:+573006549863">   3006549863</a>
+        </div>        
+        <a class="contact_item" href="mailto:sanjuanelectronics@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail"><box-icon class="contact_icon"name='envelope' color='#f9f906' ></box-icon>sanjuanelectronics@gmail.com</a>
+        <a class="contact_item" target="_blank" href="https://goo.gl/maps/URRnVXoKpRpcA6VTA"><box-icon class="contact_icon"name='edit-location' type='solid' color='#f9f906' ></box-icon>    Transversal 9#57 N 202 , Popayán, Colombia</a>
     </div>
     <div id="servicios_footer">
         <h3>Servicios</h3>

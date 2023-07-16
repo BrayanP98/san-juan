@@ -498,6 +498,21 @@ header{
     position: relative;
    top: 80px;
  }
+ #logo_menu{
+    width: 99%;
+    height: 90px;
+    text-align: center;
+   
+ }
+ #lateral img{
+    position: relative;
+    top: 15px;
+    width: 85px;
+    height: 90%;
+   
+    
+   
+ }
 
 .container{
     width: 99%;
