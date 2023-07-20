@@ -479,9 +479,15 @@ header{
  }
  .menu_lateral li{
     margin-top: 20px;
+   
     
 
  }
+.item_menu.active{
+    color: aqua;
+
+
+}
  .menu_lateral li a{
     display: flex;
     flex-direction: row;
@@ -489,7 +495,7 @@ header{
    color: #3f3b3b;
    position: relative;
    width: fit-content;
-   
+   font-size: 17px;
    left: 30px;
    gap: 15px;
  }
