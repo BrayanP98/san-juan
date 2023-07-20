@@ -42,6 +42,12 @@
 
 
         </ul>
+        <div id="redes_lateral">
+        <a href="https://www.facebook.com/sanjuanelectronicspopayan/"><box-icon name='facebook-circle' type='logo' color='rgba(10,14,227,0.99)' ></box-icon></a> 
+        <a href="https://www.instagram.com/sanjuanelectronics35/"><box-icon name='instagram' type='logo' color='rgba(204,43,98,0.77)' ></box-icon></a> 
+        <a href="https://www.youtube.com/@sanjuansalcedo9561"><box-icon name='youtube' type='logo' color='rgba(220,10,10,0.99)' ></box-icon></a> 
+
+        </div>
         
     </div>
     <div id="info_head"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="fill: rgb(250, 248, 248);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg><p>Lunes - Sábado: 8:00 am - 06.00 pm Domingo: Cerrado</p> <a>Contacto: 3006549863 - 3022456227</a></div>
@@ -338,6 +344,7 @@
 <script src="js/index.js" ></script>
 </body>
 <footer>
+    <button id="subir"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 24 24" style="fill: rgb(33, 106, 196);"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path></svg></button>
 
  <div id="redes_footer">
         <h3>San Juan Electronics</h3>
@@ -364,7 +371,49 @@
             vertical-align: middle;
 
         }
+        #subir{
+  font-weight: bold;
+  border: 0;
+  background: transparent;
+  font-size:50px;
+  position: fixed;
+  z-index: 1000;
+  
+  right:  17px;
+  bottom: 55px;
+  opacity: 0;
+}
+#subir.show {      
+opacity: 1;  
+transition: opacity 1s, transform 1s;     
+}
     </style>
+    <script>
+ 
+
+        const showOnPx = 100;
+        const scrollContainer = () => {
+          return document.documentElement || document.body;
+        };
+        document.addEventListener("scroll", () => {
+          let btn_subi=document.getElementById("subir")
+          if (scrollContainer().scrollTop > showOnPx) {
+            btn_subi.classList.add("show")
+          } else {
+            btn_subi.classList.remove("show")
+          }
+        })
+        
+        
+           var btn_subir=document.getElementById("subir")
+            btn_subir.onclick=function(){
+             window.scrollTo({
+              top:0,
+              behavior:"smooth"
+             })
+              
+            }
+        </script>
     <div id="contact_footer">
         <h3>Contacto</h3>
 

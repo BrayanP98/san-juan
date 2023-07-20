@@ -409,8 +409,6 @@ header{
  #lateral.active{
    width: 250px;
    
-    height: 99.9%;
-    position: fixed;
    background: white;
     z-index: 999;
     
@@ -516,8 +514,21 @@ header{
     width: 85px;
     height: 90%;
    
-    
-   
+ }
+ #redes_lateral{
+
+    width: 99%;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+ }
+ #redes_lateral box-icon{
+    width: 40px;
+    height: 40px;
  }
 
 .container{
