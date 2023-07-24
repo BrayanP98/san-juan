@@ -16,3 +16,31 @@ menu.classList.toggle('active')
 }
 
 
+const showOnPx = 100;
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+document.addEventListener("scroll", () => {
+  let btn_subi=document.getElementById("subir")
+  let button_lateral=document.getElementById("button_lateral")
+  if (scrollContainer().scrollTop > showOnPx) {
+    btn_subi.classList.add("show")
+    button_lateral.classList.add("show")
+  } else {
+    btn_subi.classList.remove("show")
+    button_lateral.classList.remove("show")
+
+  }
+})
+
+
+   var btn_subir=document.getElementById("subir")
+    btn_subir.onclick=function(){
+     window.scrollTo({
+      top:0,
+      behavior:"smooth"
+     })
+      
+    }
+
+

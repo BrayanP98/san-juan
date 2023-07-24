@@ -544,6 +544,8 @@ header{
     border-radius: 50%;
     z-index: 999;
     transition: all .5s ease;  
+    left: -13px;
+    box-shadow: -0px -0px 0px 3px  rgba(143, 141, 141, 0.444);
  }
 
  #button_lateral.show{
@@ -721,6 +723,183 @@ font-weight: bolder;
     padding-right: 8px;
     
 }
+#celphone{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+   
+}
+.contact_icon{
+    
+    vertical-align: middle;
+
+}
+#subir{
+font-weight: bold;
+border: 0;
+background: transparent;
+font-size:50px;
+position: fixed;
+z-index: 1000;
+right:  17px;
+bottom: 55px;
+opacity: 0;
+}
+#subir.show {      
+opacity: 1;  
+transition: opacity 1s, transform 1s;     
+}
+#whatsapp svg{
+    width: 20px;
+    height:16px ;
+    vertical-align: middle;
+    
+}
+#redes_flotante{
+width: fit-content;
+border-radius: 30%;
+position: fixed;
+height: fit-content;
+z-index: 99;
+bottom: 15%;
+right: 18px;
+align-items: center;
+display: flex;
+flex-direction: column;
+
+}
+#facebook_float,#insta_float, #youtobe_float{
+border-radius: 30%;
+width: 35px;
+height: 32px;
+position: relative;
+
+}
+#facebook_float:hover{
+box-shadow: 3px 3px 3px 1px rgba(51, 38, 233, 0.692);
+
+
+}
+#insta_float:hover{
+box-shadow: 3px 3px 3px 1px rgba(219, 25, 115, 0.479);
+}
+#youtobe_float:hover{
+box-shadow: 3px 3px 3px 1px rgba(219, 25, 25, 0.479);
+}
+#whatsapp{
+    width: 250px;
+    height: fit-content;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 99;
+    background:#1ebe41f0;
+    border-radius:30px;
+    text-decoration: none;
+    font-size: 13px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    
+}
+
+
+footer{
+
+    width: 100%;
+    height:fit-content;
+    background: black;
+    position: relative;
+    top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-top:15px ;
+    
+}
+#redes_footer{
+width:300px ;
+height: 200px;
+padding: 5px;
+color: white;
+
+}
+#redes_footer h5{
+    font-family: "Rubik", Sans-serif;
+    border-bottom: 1px solid red;
+    margin-left: 100px;
+    width: fit-content;
+
+}
+#contact_footer{
+width:300px ;
+height: 200px;
+position: relative;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+gap: 25px;
+padding: 5px;
+color: white;
+font-family: "Rubik", Sans-serif;
+
+}
+.contact_item{
+   
+    color:yellow;
+   text-decoration: none;
+    font-family: "Rubik", Sans-serif;
+    
+    
+   
+}
+#servicios_footer{
+width:300px;
+height: 200px;
+display: flex;
+flex-direction: column;
+
+padding: 8px;
+gap: 20px;
+color: white;
+}
+ .serviciosFoot{
+    color: yellow;
+    font-family: "Rubik", Sans-serif;
+ }
+#servicios_footer h3, #contact_footer h3{
+    text-decoration: underline
+
+}
+
+#redes_icon{
+    width: 90%;
+    height: 30px;
+   position: relative;
+   display: flex;
+   top: 50px;
+   float: right;
+   flex-direction: row;
+  
+   gap: 25px;
+
+}
+#redes_icon a{
+    width:25px;
+    height: 100%
+    
+}
+#icon_facebook{
+
+    width: 30px;
+    height: 100%;
+    border-radius: 30%;
+}
 
 
 @media only screen
@@ -728,6 +907,7 @@ and (min-width: 120px)
 and (max-width: 856px)
 
 {
+   
     #info_head{
 
         display: none;
