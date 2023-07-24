@@ -8,7 +8,28 @@
    
 
 }
+#bola{
 
+    width: 40px;
+    height: 40px;  
+    border: 1px solid rgb(58, 228, 58);
+    position: fixed;
+    z-index: 1111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#bola_child{
+   width: 15px;
+    height: 15px;  
+    background-color: rgb(58, 228, 58);
+    position: fixed;
+    z-index: 1111;
+    border-radius: 50%;
+   
+}
 
 /*body{
 position: relative;
