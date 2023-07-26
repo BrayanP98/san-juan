@@ -10,7 +10,7 @@
     <title>San Juan</title>
     <link rel="icon" type="image/x-icon" href="img/sanjuan.png">
 </head>
-<body onMouseMove="sigueme();">
+<body onMouseMove="sigueme();" >
     <div id="bola">
         <div id="bola_child"></div>
     </div>
@@ -49,6 +49,7 @@
 
     </header>
     <div class="container">
+        
         <div id="us_descrip">
            <div id="content_us"> 
             <div class="tittle"><div id="raya"></div><h3>NOSOTROS</h3></div> 
@@ -251,12 +252,13 @@ console.log(mover.scrollLeft); //Muestra en consola la posicion del scroll
         #content_us p{
             letter-spacing: 0px;
             line-height: 30px;
-            height: 250px;
-            position: relative;
-            top: 20px;
-           display: flex;
-           align-items: center;
-           text-align: justify;
+        text-align: justify;
+        position: relative;
+        top: 20px;
+        width: 95%;
+     
+       
+        height: 100%;
            
 
         }

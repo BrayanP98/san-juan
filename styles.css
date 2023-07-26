@@ -10,8 +10,8 @@
 }
 #bola{
 
-    width: 40px;
-    height: 40px;  
+    width: 35px;
+    height: 35px;  
     border: 1px solid rgb(58, 228, 58);
     position: fixed;
     z-index: 1111;
@@ -21,6 +21,18 @@
     justify-content: center;
 
 }
+body:active  #bola{
+    border: 1px solid rgb(58, 157, 228);
+    opacity: 1;
+}
+body:active  #bola_child{
+    background-color: rgb(58, 157, 228);
+
+    opacity: 1;
+}
+
+
+
 #bola_child{
    width: 15px;
     height: 15px;  
@@ -961,6 +973,8 @@ header{
     height: 250px;
 }
    
-
+#bola{
+    opacity: 0;
+}
 
 }
