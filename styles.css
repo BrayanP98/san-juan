@@ -704,14 +704,15 @@ left:2vw    ;
     
 }
 .container{
+
     width: 99%;
     height: fit-content;
     background: white;
-    margin-top: 55px;
+    margin-top: 65px;
    
 }
 .container h2{
-  
+   margin-top: 25px;
     text-align: center;
     text-decoration: underline;
    
@@ -726,6 +727,7 @@ flex-direction: row;
 gap: 15px;
 margin-top: 55px;
 justify-content: center;
+
 }
 .item_services{
 width: 300px;
