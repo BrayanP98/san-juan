@@ -625,7 +625,84 @@ header{
   }
   
   
+#sorteos{
+    position: relative;
+    width: 99%;
+    height: fit-content;
+    background: #10f0dda3;
+   display: flex;
+   flex-direction: column;
+   gap: 45px;
+  padding-bottom: 25px;
+  
+}
 
+#sorteos p{
+position:relative;
+
+font-size: 40px;
+width: 100%;
+top: 0;
+left:2vw    ;
+
+}
+#descuento{
+    text-decoration: none;
+    color: red;
+
+}
+#cont_rta{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 200px;
+  align-items: center;
+  text-align: center;
+  
+    
+}
+#respuesta{
+    width: 100px;
+}
+#sun{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+   position: absolute;
+   border-radius: 50%;
+   float: right;
+   top: 15px;
+   right: 100px;
+   box-shadow: 0 0 40px rgb(255, 136, 0);
+
+}
+
+@keyframes colors {
+
+    30%{color: yellow;}
+    60%{ color: rgb(44, 17, 245);}
+    100%{color: red;}
+   
+}
+#btn_obtener{
+    position: absolute;
+   height: fit-content;
+    bottom: 5px;
+   right: 20%;
+    width: 200px;
+    text-align: center;
+    background:#1ebe41f0;
+    text-decoration: none;
+    padding: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-radius:25px;
+    color: white;
+    animation: colors 3s   ease-in-out infinite;
+    
+}
 .container{
     width: 99%;
     height: fit-content;
@@ -941,6 +1018,15 @@ and (max-width: 856px)
 
 {
    
+    #sorteos p{
+        position:relative;
+        
+        font-size: 30px;
+    }
+       
+    #sun{
+        right: 10px;
+    }
     #info_head{
 
         display: none;
