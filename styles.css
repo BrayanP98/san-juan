@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&display=swap');
 
 *{
     font-family: 'Poppins', sans-serif;
-    font-family: 'Unbounded', cursive;
+    font-family: "Rubik", Sans-serif;
     margin: 0;
     padding: 0;
    
@@ -634,18 +634,44 @@ header{
    flex-direction: column;
    gap: 45px;
   padding-bottom: 25px;
+  border-radius: 120px 0px 120px 120px;
   
+}
+#verano{
+    text-decoration: none;
+    color: rgb(250, 242, 9);
+    position: relative;
+    float: right;
+    line-height: 0.1;
+    font-size:75px;
+   
+    font-family: 'Dancing Script', cursive;
+   
 }
 
 #sorteos p{
-position:relative;
-
-font-size: 40px;
-width: 100%;
-top: 0;
-left:2vw    ;
-
+    position:relative;
+    height: fit-content;
+    font-size: 40px;
+    width: fit-content;
+    top: 55px;
+    
+    
+    }
+#p_verano::before{
+   content:" ......";
+   color: transparent;
 }
+#p_verano{
+    
+    position:relative;
+    color: #0f0f0f;
+   
+    width: fit-content;
+    top: 0;
+    left:5vw    ;
+}
+
 #descuento{
     text-decoration: none;
     color: red;
@@ -656,10 +682,11 @@ left:2vw    ;
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 200px;
+    height: 250px;
   align-items: center;
   text-align: center;
-  
+  top: 30px;
+  vertical-align: middle;
     
 }
 #respuesta{
@@ -705,7 +732,7 @@ left:2vw    ;
 }
 .container{
 
-    width: 99%;
+    width: 100%;
     height: fit-content;
     background: white;
     margin-top: 65px;
