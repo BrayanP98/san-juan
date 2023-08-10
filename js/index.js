@@ -60,5 +60,12 @@ document.addEventListener("scroll", () => {
     
  
     }
+    var sorteos= document.querySelector("#sorteos")
+    var valido= document.querySelector("#valido")
+    sorteos.onclick=function(){
+
+      window.open('https://wa.me/573022456227')
+      
+    }
 
 
