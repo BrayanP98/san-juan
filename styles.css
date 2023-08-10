@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&family=REM:wght@200&family=Ubuntu&display=swap');  
+
 
 *{
-    font-family: 'Poppins', sans-serif;
-    font-family: "Rubik", Sans-serif;
+   
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
    
@@ -635,7 +637,10 @@ header{
    gap: 45px;
   padding-bottom: 25px;
   border-radius: 120px 0px 120px 120px;
-  
+  background-image: url("img/pngegg\ \(1\).png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position:bottom;
 }
 #verano{
     text-decoration: none;
@@ -643,7 +648,7 @@ header{
     position: relative;
     float: right;
     line-height: 0.1;
-    font-size:75px;
+    font-size:100px;
    
     font-family: 'Dancing Script', cursive;
    
@@ -682,12 +687,21 @@ header{
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 250px;
+    height: 300px;
   align-items: center;
   text-align: center;
   top: 30px;
   vertical-align: middle;
     
+}
+#valido{
+
+    text-decoration: none;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: #0f0f0f;
+    font-size: 13px;
 }
 #respuesta{
     width: 100px;
@@ -1051,6 +1065,9 @@ and (max-width: 856px)
         position:relative;
         
         font-size: 30px;
+    }
+    #verano{
+        font-size:75px;
     }
        
     #sun{
