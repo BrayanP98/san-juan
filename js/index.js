@@ -64,8 +64,48 @@ document.addEventListener("scroll", () => {
     var valido= document.querySelector("#valido")
     sorteos.onclick=function(){
 
-      window.open('https://wa.me/573022456227')
+     // window.open('https://wa.me/573022456227')
+     send_whatsapp();
       
     }
+
+
+
+    function send_whatsapp(){
+      var botId = '122100131648008841';
+      var phoneNbr = '573026055289';
+      var bearerToken = 'EABpkYoLqZBZCYBO2csLXYJZBDDThxdWnE4MglsqZAeaubuZCRroCj8KEE4dycWmurZBzKIiXcYqNzJNtHnddx3o5kZCu706zyTxoXfg7lNyoN3Vy8Nf4D6lTQEs4Db9qhFdW7BNWRdlaq1XI6CSIrgeM2wMj5oE7ZARzgdd8z0ZCYRJQD8IJnXinvVYYbfemDafWF';
+      
+      var url = 'https://graph.facebook.com/v17.0/' + botId + '/messages';
+      var data = {
+        messaging_product: 'whatsapp',
+        to: phoneNbr,
+        type: 'template',
+        template: {
+          name:'confirmacion',
+         language:{ code: 'es_MX' }
+        }
+      };
+      
+      var postReq = {
+        method: 'POST',
+        headers: {
+          'Authorization': 'Bearer ' + bearerToken,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data),
+        json: true
+      };
+      
+      fetch(url, postReq)
+        .then(data => {
+          return data.json()
+        })
+        .then(res => {
+          console.log(res)
+        })
+        .catch(error => console.log(error));
+      }
+  
 
 
