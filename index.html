@@ -11,6 +11,50 @@
     <link rel="icon" type="image/x-icon" href="img/sanjuan.png">
 </head>
 <body onMouseMove="sigueme();">
+
+    <div id="div_notific">
+
+        <p>mensaje enviado</p>
+    </div>
+   
+<script>
+    
+     
+</script>
+    <style>
+
+@keyframes pass{
+  from{
+    height:  0px;
+  }to{
+    height:100px;
+  }}
+        #div_notific{
+            width: 180px;
+           height:0px;
+            position: fixed;
+            top: 0;
+            right: 15px;
+            background: red;
+           
+           overflow: hidden;
+            
+        }
+        #div_notific.active{
+            height:100px;
+            animation: pass 1s ease-in ;
+            
+
+        }
+        #div_notific p{
+            justify-content: center;
+            position: relative;
+            display: flex;
+            vertical-align: middle;
+            top: 40px;
+            width: 100%;
+        }
+    </style>
     <div id="bola">
         <div id="bola_child"></div>
     </div>
@@ -87,27 +131,27 @@
    
     <div class="container">
 
-        <div id="sorteos">
-            <p id="p_verano">    Promo de <br><a id="verano" href="">Verano...</a></p>
+       <!----> <div id="sorteos">
+            <p id="p_verano">   Promo de <br><a id="verano" href="">Verano...</a></p>
             
             <div id="cont_rta">
-                <p>Por este mes <a href="" id="descuento">15 %</a> de descuento en tu dispositivo GPS vehicular.</p>
+                <p>Obten un <a href="" id="descuento">15 %</a> de descuento en tu dispositivo GPS vehicular.</p>
 
-                <a id="valido" href="">Valido del 1 al 31 de Agosto o hasta agotar existencias.</a>
+                <a id="valido" href="">Valido del 1 al 15 de septiembre o hasta agotar existencias.</a>
             </div>
             <script>
 
                 var respuesta=document.querySelector("#respuesta")
-                var validar_btn=document.querySelector("#validar_rta");
+               
 
                 validar_btn.onclick=function(){
                     
 
-                    if(respuesta.value==="pedo"){
-                        alert("estas en lo correcto")
-                    }else{
-                        alert("fallaste")
-                    }
+                   let div_notific=document.querySelector("#div_notific");
+
+    
+      div_notific.classList.toggle("active")
+     
                 }
                 
 
@@ -126,6 +170,7 @@
             <img src="https://inteldomo.com.mx/wp-content/uploads/2021/04/portada-camaras-2021-1024x450.jpeg" alt="">
             <div class="item_name">
                 <a target="_blank" href="https://wa.me/573022456227?text=Quisiera%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios%20">Camaras de seguridad</a>
+                <div class="descrptiom_item"><p>Un *sistema de CCTV* es una herramienta valiosa para la seguridad, la vigilancia y el control en una variedad de contextos. Los beneficios pueden ser particularmente evidentes en la prevención de delitos, la resolución de disputas, la seguridad del personal y la supervisión remota, entre otros aspectos. Sin embargo, es importante implementar y utilizar los sistemas de CCTV de manera ética y cumpliendo con las regulaciones de privacidad y derechos civiles pertinentes</p></div>
             </div>
 
         </div>
@@ -134,6 +179,7 @@
             <div class="item_name">
 
                 <a target="_blank" href="https://wa.me/573022456227?text=Quisiera%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios%20">GPS vehicular</a>
+                <div class="descrptiom_item"><p>Los sistemas de GPS vehiculares ofrecen una amplia gama de beneficios, desde la mejora de la eficiencia operativa y la reducción de costos hasta la optimización de la navegación y la seguridad personal. Estos beneficios varían según el contexto y la finalidad de su uso, ya sea para conductores individuales, flotas comerciales o aplicaciones de seguridad</p></div>
             </div>
 
         </div>
@@ -142,6 +188,7 @@
             <div class="item_name">
 
                 <a target="_blank" href="https://wa.me/573022456227?text=Quisiera%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios%20">Alarmas residenciales</a>
+                <div class="descrptiom_item">gfgfgfg</div>
             </div>
 
         </div>
@@ -151,6 +198,7 @@
             <div class="item_name">
 
                 <a target="_blank" href="https://wa.me/573022456227?text=Quisiera%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios%20">Control de acceso</a>
+                <div class="descrptiom_item"> Un sistema de control de acceso es fundamental para garantizar la seguridad, la privacidad y la gestión eficiente de recursos en una amplia variedad de contextos. Desde la seguridad cibernética hasta la protección de instalaciones físicas, sus beneficios son esenciales para mantener la integridad de los sistemas y la información</div>
             </div>
             
         </div>
@@ -160,7 +208,9 @@
             <div class="item_name">
 
                 <a target="_blank" href="https://wa.me/573022456227?text=Quisiera%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios%20">Automatizacion</a>
+                <div class="descrptiom_item"> La automatización de edificios ofrece una serie de beneficios que van desde el ahorro de costos y la eficiencia energética hasta la mejora del confort y la seguridad. Estos beneficios hacen que la inversión en tecnología de automatización sea atractiva tanto para propietarios de edificios como para inquilinos.</div>
             </div>
+           
             
         </div>
 
@@ -170,6 +220,7 @@
             <div class="item_name">
 
                 <a target="_blank" href="https://wa.me/573022456227?text=Quisiera%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios%20">Paneles solares</a>
+                <div class="descrptiom_item"> los sistemas depaneles solares ofrecen beneficios económicos, medioambientales y sociales significativos. Su adopción ha ido en aumento en todo el mundo debido a estos beneficios, y la energía solar desempeña un papel importante en la transición hacia fuentes de energía más limpias y sostenibles./div>
             </div>
 
         </div>
@@ -203,17 +254,18 @@
         </div>
         <h2 style="margin-top: 25px;">Fotos</h2>
         <div id="imagen_section">
-            <img src="https://scontent.fbog11-1.fna.fbcdn.net/v/t1.6435-9/87361732_1019092621802256_6077622703752216576_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=krsAPygjecoAX_esGsB&_nc_ht=scontent.fbog11-1.fna&oh=00_AfDTpu-30eqt4Jy6kfOTLljELRAg938iZyirFcKTZPeRBQ&oe=64D50758" alt="">
-
-            <img src="https://scontent.fclo7-1.fna.fbcdn.net/v/t1.6435-9/79359637_952158091829043_1144522081879195648_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHLjVIYIKcovKf1_XVigu2XpaE6Br6Fyf6loToGvoXJ_t5oRP42TlYZ01EDkbg-wPudHNlkohNa4CP7mmfzukRy&_nc_ohc=zq_hvafpkO8AX-Hf9Tc&_nc_ht=scontent.fclo7-1.fna&oh=00_AfAJ_FDh9Irby_-IemTIl5VbS222euYOrfLxmrAqCnLTOg&oe=64DB7C6D" alt="">
-            <img src="https://photos.app.goo.gl/j8CM3WY9JefmhV8x6" alt="">
-
-                <img src="https://scontent.fbog11-1.fna.fbcdn.net/v/t1.6435-9/74566702_726030051241275_4292060380529688576_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=n-fIumeHuLIAX-Agcbm&_nc_ht=scontent.fbog11-1.fna&oh=00_AfBTvmrifPVy3zwoKf8HQWU6HA_Nxqh1s1OKoWR5L-2FCw&oe=64D51EA1" alt="">
-                <img src="https://scontent.fbog11-1.fna.fbcdn.net/v/t1.6435-9/82414326_785113721999574_6407307155057147904_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=84a396&_nc_ohc=ZH-qiH_Ch5kAX8fk_iv&_nc_ht=scontent.fbog11-1.fna&oh=00_AfBNFjnzRU6rdfOjfzOHqP8J-qMx_Ozv_-PhiLeFo0GEwQ&oe=64D50B0D" alt="">
-                <img src="https://scontent.fbog11-1.fna.fbcdn.net/v/t1.6435-9/80072954_757029564807990_2410875961990971392_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=y8ONBwsj_qoAX-YyrWP&_nc_ht=scontent.fbog11-1.fna&oh=00_AfCSfKicBy8W1HU4KjOYhDNQ9KMRkAzgh_7tljeV2daPEw&oe=64D51566" alt="">
-                <img src="https://scontent.fbog11-1.fna.fbcdn.net/v/t39.30808-6/359783828_1668769116967359_7222280041017186043_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=uXHqSCYLSv0AX9wBgvI&_nc_ht=scontent.fbog11-1.fna&oh=00_AfA1vr3CA55SUfmmvP7IBC_ol1mrzdxvQDaLlAJ9fQrbPQ&oe=64B52FD7" alt="">
-                
+            
         </div>
+       </section>
+
+
+       <section id="aboutus">
+        <h2>ACERCA DE SAN JUAN ELECTRONICS</h2>
+        <p id="desc_about">SAN JUAN ELECTRONICS| Tu Seguridad es nuestra prioridad.<br>
+             Con 15 años de trayectoria en el territorio caucano. Somos líderes en el mercado 
+            en implementacion en soluciones de seguridad electrónica y tecnología.</p>
+
+
        </section>
 
     </div>
@@ -264,9 +316,9 @@
         <p class="serviciosFoot">-Seguridad electronica</p>
         <p class="serviciosFoot">-Energia Solar</p>
         <p class="serviciosFoot">-Accesorios para computador</p>
-        
+        <a href="/politica_privacidad.html">nuestra política de privacidad</a>
     </div>
   
-</footer>
+</footer>   
 <script src="js/index.js" ></script>
 </html>

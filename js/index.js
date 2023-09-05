@@ -65,28 +65,83 @@ document.addEventListener("scroll", () => {
     sorteos.onclick=function(){
 
      // window.open('https://wa.me/573022456227')
-     send_whatsapp();
+    
       
     }
+    let msg="gps";
+    let msg2="cotizar"
+    var rtaopt=
+    {
+       gps:{
+         "cotizar":[
+          {
+            "mesagge":"el valor del gps esta en 2000",
+            "op1":"Cotizar",
+            "op2":"Servicio tecnico CCtv",
+            "op3":"Beneficios",
+            "op4":"otros"
+          }
+         ],
+         "Servicio tecnico GPS":[{
+          "message":"para agendar un servicio tecnico por favor comunicate al 3026055289 o escribe la palabra asesor",
+          "op1":"Cotizar",
+          "op2":"Servicio tecnico CCtv",
+          "op3":"Beneficios",
+          "op4":"otros"
+         }]
+         
+       },
+       cctv:{
+         "op1":"Cotizar",
+         "op2":"Servicio tecnico CCtv",
+         "op3":"Beneficios",
+         "op4":"otros"
+       }
+      
+       
+  
+     }
+     let rta =rtaopt[msg];
+     console.log(rta)
 
-
-
+     
+    // send_whatsapp();
     function send_whatsapp(){
       var botId = '122100131648008841';
       var phoneNbr = '573026055289';
-      var bearerToken = 'EABpkYoLqZBZCYBO2csLXYJZBDDThxdWnE4MglsqZAeaubuZCRroCj8KEE4dycWmurZBzKIiXcYqNzJNtHnddx3o5kZCu706zyTxoXfg7lNyoN3Vy8Nf4D6lTQEs4Db9qhFdW7BNWRdlaq1XI6CSIrgeM2wMj5oE7ZARzgdd8z0ZCYRJQD8IJnXinvVYYbfemDafWF';
+      var bearerToken = 'EABpkYoLqZBZCYBO830lX7JudRZBUZArnQvXgYFWBBYzEXruZAoDDFOJKjoba5hA8CeWjh4ngXOOfow8c2jqvFTmv1KV3Vfogj8tJWbpf1LuZCzh8EBSRqhXIGGRGBJdYLorQLRnjjtFhhuwpk4HJOHtRSyIbSldyraqsyh7fhXOloMrlo30wVSzZC75N28XEkCZA';
       
       var url = 'https://graph.facebook.com/v17.0/' + botId + '/messages';
-      var data = {
-        messaging_product: 'whatsapp',
-        to: phoneNbr,
-        type: 'template',
-        template: {
-          name:'confirmacion',
-         language:{ code: 'es_MX' }
+    
+     var  data= {
+      "messaging_product": "whatsapp",
+      "recipient_type": "individual",
+      "to": phoneNbr,
+      "type": "interactive",
+      "interactive": {
+        "type": "button",
+        "body": {
+          "text": "SecuriBot🤖 dice :  \n Haz click en el boton, para continuar con el proceso de renovacion."+
+          " \n \n "
+        },
+        footer: {
+          text: "scaliwoodSoft"},
+        "action": {
+          "buttons": [
+            {
+              "type": "call",
+              "reply": {
+                "id": "renovar_plataforma",
+                "title": "RENOVAR PLATAFORMA"
+              }
+            },
+           
+          ]
         }
-      };
-      
+      }
+    
+  }
+          
       var postReq = {
         method: 'POST',
         headers: {
@@ -108,4 +163,66 @@ document.addEventListener("scroll", () => {
       }
   
 
-
+   /*   var  data= {
+        messaging_product: "whatsapp",
+        recipient_type: "individual",
+        to : phoneNbr,
+        type: "interactive" ,
+        interactive:{
+          type: "list",
+          header: {  
+          type: "text",
+          text: "San Juan"},
+          body: {text: "Elije tus Opciones"},
+          footer: {
+          text: "scaliwoodSoft"},
+          action: {
+            button: "Responde",
+            sections:[
+             
+              {
+                title:"Opcion 1",
+                rows: [
+                  {
+                    id:"1",
+                    title: "Cotizar GPS",
+                    description: "Cotizar GPS",           
+                  }
+                ]
+              },
+              {
+                title:"Opcion2",
+                rows: [
+                  {
+                    id:"2",
+                    title: "Servicio Tecnico Gps",
+                    description: "Servicio Tecnico Gps",           
+                  }
+                ]
+              },
+              {
+                title:"Opcion3",
+                rows: [
+                  {
+                    id:"3",
+                    title: "Renovacion plataforma",
+                    description: "Renovacion plataforma",  
+                         
+                  }
+                ]
+              },{
+                title:"Opcion4",
+                rows: [
+                  {
+                    id:"4",
+                    title: "Renovacion plataforma",
+                    description: "Renovacion plataforma",  
+                         
+                  }
+                ]
+              }
+              
+            ]
+          }
+        }
+            }*/
