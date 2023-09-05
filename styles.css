@@ -764,8 +764,8 @@ header{
         
     
 }
-#cont_services{
-width: 100%;
+#sect_services{
+    width: 100%;
 height:fit-content;
 display: flex;
 flex-wrap: wrap;
@@ -773,6 +773,11 @@ flex-direction: row;
 gap: 15px;
 margin-top: 55px;
 justify-content: center;
+}
+#cont_services{
+width: 100%;
+height:fit-content;
+
 
 }
 .item_services{
@@ -783,6 +788,13 @@ bottom: 0;
 display: flex;
 flex-direction: column;
 
+}
+.item_services:hover~ .descrptiom_item{
+
+    background:white    ;
+    height: 250px;
+    transition: .5s ease-in;
+    border-radius: 5px;
 }
 .item_services img{
   border-radius: 9px;
@@ -818,6 +830,8 @@ font-weight: bolder;
     height: 250px;
     transition: .5s ease-in;
     border-radius: 5px;
+    border: 1px solid black;
+    color: rgb(80, 79, 79);
     }
 .descrptiom_item{
 position: absolute;
@@ -827,12 +841,13 @@ position: absolute;
    overflow: hidden;
     z-index: 999;
     top: 50px;
-    justify-content: center;
+   
+    color: rgb(80, 79, 79);
 }
 .descrptiom_item p{
     text-align: center;
     width: 90%;
-
+    padding: 8px;
 }
 
 #our_marcas{
@@ -847,7 +862,7 @@ position: absolute;
 }
 #our_marcas img{
 
-    width: 150px;
+    width: 130px;
     height: 150px;
 }
 
