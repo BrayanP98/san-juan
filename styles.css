@@ -1021,7 +1021,7 @@ box-shadow: 3px 3px 3px 1px rgba(219, 25, 25, 0.479);
 #desc_about{
     line-height: 1.2;
    position: relative;
-    width: 500px;
+    width: 50%;
     font-weight: 0;
     font-family: "Lato","Avenir",Arial,sans-serif;
    
