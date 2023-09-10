@@ -639,7 +639,7 @@ header{
   border-radius: 120px 0px 120px 120px;
   background-image: url("/img/23294.jpg");
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position:bottom;
 }
 #verano{
@@ -647,9 +647,9 @@ header{
     color: rgb(250, 9, 17);
     position: relative;
     float: right;
-    line-height: 0.1;
+    
     font-size:100px;
-   
+   height: fit-content;
     font-family: 'Dancing Script', cursive;
    
 }
