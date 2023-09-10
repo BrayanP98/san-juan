@@ -105,7 +105,7 @@ document.addEventListener("scroll", () => {
      console.log(rta)
 
      
-    // send_whatsapp();
+// send_whatsapp();
     function send_whatsapp(){
       var botId = '122100131648008841';
       var phoneNbr = '573026055289';
@@ -115,29 +115,34 @@ document.addEventListener("scroll", () => {
     
      var  data= {
       "messaging_product": "whatsapp",
-      "recipient_type": "individual",
-      "to": phoneNbr,
-      "type": "interactive",
-      "interactive": {
-        "type": "button",
-        "body": {
-          "text": "SecuriBot🤖 dice :  \n Haz click en el boton, para continuar con el proceso de renovacion."+
-          " \n \n "
-        },
-        footer: {
-          text: "scaliwoodSoft"},
-        "action": {
-          "buttons": [
+  "recipient_type": "individual",
+  "to": phoneNbr,
+  "type": "template",
+  "template": {
+    "name": "vencido",
+    "language": {
+      "code": "es_MX"
+    },
+    "components": [
+
+      
+        {
+          "type": "body",
+          "parameters": [
             {
-              "type": "call",
-              "reply": {
-                "id": "renovar_plataforma",
-                "title": "RENOVAR PLATAFORMA"
-              }
+              "type": "text",
+              "text": "TEXT-STRING"
+            },
+            {
+              "type": "text",
+              "text": "TEXT-STRING"
             },
            
-          ]
-        }
+          
+          ]},
+      
+    ]
+  
       }
     
   }
@@ -225,4 +230,56 @@ document.addEventListener("scroll", () => {
             ]
           }
         }
-            }*/
+            }
+            
+               var  data= {
+      "messaging_product": "whatsapp",
+  "recipient_type": "individual",
+  "to": phoneNbr,
+  "type": "template",
+  "template": {
+    "name": "expiracion1",
+    "language": {
+      "code": "es_MX"
+    },
+    "components": [
+
+      
+        {
+          "type": "body",
+          "parameters": [
+            {
+              "type": "text",
+              "text": "TEXT-STRING"
+            },
+            {
+              "type": "text",
+              "text": "TEXT-STRING"
+            },
+            {
+              "type": "text",
+              "text": "TEXT-STRING"
+            },
+            {
+              "type": "text",
+              "text": "TEXT-STRING"
+            },
+          
+          ]},
+       { "type": "button",
+        "sub_type" : "url",
+        "index": "2",
+        "parameters": [
+          
+            {                    
+                "type": "text",
+               
+                "text": "https://sanjuanelectronics.online/"
+            }
+        ]
+      }
+    ]
+  
+      }
+    
+  }*/

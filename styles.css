@@ -637,14 +637,14 @@ header{
    gap: 45px;
   padding-bottom: 25px;
   border-radius: 120px 0px 120px 120px;
-  background-image: url("img/pngegg\ \(1\).png");
+  background-image: url("/img/23294.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position:bottom;
 }
 #verano{
     text-decoration: none;
-    color: rgb(250, 242, 9);
+    color: rgb(250, 9, 17);
     position: relative;
     float: right;
     line-height: 0.1;
@@ -660,7 +660,7 @@ header{
     font-size: 40px;
     width: fit-content;
     top: 55px;
-    
+    color: wheat;
     
     }
 #p_verano::before{
@@ -670,7 +670,7 @@ header{
 #p_verano{
     
     position:relative;
-    color: #0f0f0f;
+    color: #f6f5f5;
    
     width: fit-content;
     top: 0;
@@ -700,23 +700,57 @@ header{
     position: absolute;
     bottom: 50px;
     left: 20px;
-    color: #0f0f0f;
+    color: #ecd9d9;
     font-size: 13px;
 }
 #respuesta{
     width: 100px;
 }
-#sun{
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-   position: absolute;
-   border-radius: 50%;
-   float: right;
-   top: 15px;
-   right: 100px;
-   box-shadow: 0 0 40px rgb(255, 136, 0);
 
+#sun{
+    --size: 100px;
+    --color: rgba(255, 0, 25, 0.592);
+    position: absolute;
+    box-shadow: 0 0 40px rgb(255, 38, 0);
+    top: 45px;
+    right: 100px;
+    transform:rotate(45deg);
+    animation:beat 1s infinite alternate ease-in-out;
+  }
+  @keyframes beat{
+    to{
+      transform: rotate(45deg) scale(1.05);
+    }
+  }
+  
+  #sun,
+  #sun::before,
+  #sun::after{
+      width: var(--size);
+      height: var(--size);
+      background:var(--color);
+  }
+  #sun::before,
+  #sun::after{
+    content:'';
+    display: block;
+    border-radius:50%;
+  }
+  #sun::before{
+    margin-top: calc(var(--size)*-.5);
+   
+  }
+  #sun::after{
+    margin-top: calc(var(--size)* -0.5);
+    margin-left: calc(var(--size)* -0.5);
+  }
+  
+@keyframes colors {
+
+    30%{color: yellow;}
+    60%{ color: rgb(44, 17, 245);}
+    100%{color: red;}
+   
 }
 
 @keyframes colors {
