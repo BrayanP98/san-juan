@@ -765,7 +765,7 @@ header{
     position: absolute;
     box-shadow: 0 0 40px rgb(255, 38, 0);
     top: 45px;
-    right: 80px;
+    right: 60px;
     float: right;
     transform:rotate(45deg);
     animation:beat 1s infinite alternate ease-in-out;
@@ -1238,6 +1238,10 @@ and (max-width: 856px)
    #content_header{
 
     display: none;
+   }
+   #sun{
+    
+    --size: 70px;
    }
    .item_services.item_services:nth-child(2n){
     
