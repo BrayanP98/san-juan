@@ -737,13 +737,14 @@ header{
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 230px;
+    height: 250px;
   align-items: center;
   text-align: center;
-  
+ 
   vertical-align: middle;
     
 }
+
 #valido{
 
     text-decoration: none;
@@ -1230,6 +1231,10 @@ and (max-width: 856px)
 
         position: relative;
     }
+    #space_foot{
+
+        display: none;
+    }
    #content_header{
 
     display: none;
@@ -1265,7 +1270,7 @@ and (max-width: 856px)
     #sorteos p{
         position:relative;
         
-        font-size: 30px;
+        font-size: 25px;
     }
     #verano{
         font-size:75px;
