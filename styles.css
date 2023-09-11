@@ -1,7 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&family=REM:wght@200&family=Ubuntu&display=swap&family=Lato');  
 
+:root{
+    color-scheme: light;
 
+}
 *{
    
     font-family: 'Ubuntu', sans-serif;
@@ -286,7 +289,24 @@ display: none;
 */
 
 /*---------------------------------------*/
+@keyframes imgshow{
 
+    from{
+
+        opacity: 0;
+        scale: 25%;
+    }to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+iframe,img,p,h2,.item_services,#sorteos{
+    view-timeline-name: --revealing-image;
+    animation-name: imgshow;
+    animation-fill-mode: backwards;
+    animation-timeline: --revealing-image;
+    animation-range: entry 35% cover 40%;
+}
 #info_head{
     width: 100%;
     height: 30px;
@@ -332,7 +352,7 @@ header{
    flex-direction: row;
    flex-wrap: wrap;
     background-size:100% 100%;
-    opacity: 0.95;
+    
     background-repeat: repeat-x;
    
 
@@ -368,8 +388,8 @@ header{
    font-size: 15px;
     
 }
-#content_header button{
-    width: 150px;height: 35px;
+#content_header     a{
+    width: 150px;height: 28px;
     position: relative;
     color: rgb(12, 12, 12);
    float: right;
@@ -380,7 +400,9 @@ header{
     background: white;
     font-weight: bolder;
     font-size: 15px;
-   
+   text-align: center;
+   text-decoration: none;
+   padding-top: 8px;
     
 }
 #logo{
@@ -761,8 +783,9 @@ header{
 #sun{
     
     --size: 90px;
-    --color: rgba(255, 0, 25, 0.625);
+    --color: rgba(255, 0, 25, 0.793);
     position: absolute;
+    
     box-shadow: 0 0 40px rgb(255, 38, 0);
     top: 45px;
     right: 60px;
@@ -779,12 +802,14 @@ header{
   #sun,
   #sun::before,
   #sun::after{
+  
       width: var(--size);
       height: var(--size);
       background:var(--color);
   }
   #sun::before,
   #sun::after{
+   
     content:'';
     display: block;
     border-radius:50%;
@@ -798,13 +823,7 @@ header{
     margin-left: calc(var(--size)* -0.5);
   }
   
-@keyframes colors {
 
-    30%{color: yellow;}
-    60%{ color: rgb(44, 17, 245);}
-    100%{color: red;}
-   
-}
 
 @keyframes colors {
 
@@ -832,6 +851,7 @@ header{
     animation: colors 3s   ease-in-out infinite;
     
 }
+
 .container{
 
     width: 100%;
@@ -889,6 +909,7 @@ justify-content: center;
  
     width: 30%;
     height: 100%;
+   
 }
 
 .item_services img:hover{
