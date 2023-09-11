@@ -23,13 +23,16 @@ const scrollContainer = () => {
 document.addEventListener("scroll", () => {
   let btn_subi=document.getElementById("subir")
   let button_lateral=document.getElementById("button_lateral")
+  let button_what=document.getElementById("whatsapp");
   if (scrollContainer().scrollTop > showOnPx) {
     btn_subi.classList.add("show")
     button_lateral.classList.add("show")
+    button_what.classList.add("normal")
+
   } else {
     btn_subi.classList.remove("show")
     button_lateral.classList.remove("show")
-
+    button_what.classList.remove("normal")
   }
 })
 

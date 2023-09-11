@@ -290,12 +290,13 @@ display: none;
 #info_head{
     width: 100%;
     height: 30px;
-    background: rgb(25,118,210);
+    background: rgba(3, 3, 15, 0.87);
     display: flex;
     position: static;
     flex-direction: row;
     justify-content: center;
     padding-top: 10px;
+   
 }
 #info_head p{
     font-size: 13px;
@@ -324,28 +325,77 @@ display: none;
 }
 header{
     width: 100%;
-    height: 400px;
-    background-image: url("img/camara_head1.png");
+    height: 700px;
+    background-image: url("/img/6202241.jpg");
+    shape-outside: inset(10px 10px 10px 10px);
     display: flex;
-    flex-direction: row;
+   flex-direction: row;
+   flex-wrap: wrap;
     background-size:100% 100%;
-    
+    opacity: 0.95;
     background-repeat: repeat-x;
+   
+
+
+ 
+}
+
+#content_header{
+    width: 700px;
+    height: 250px;
+  
+    bottom: 150px;
+    position:absolute;
+    left: 155px;
+    padding: 15px;
+    
+}
+#content_header h2{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
     
    
 }
-#logo{
-    left: 15px;
+#content_header p{
+    color: white;
     position: relative;
-    top: 8px;
-    width:200px;
-    height: 150px;
+    margin-top: 35px;
+    vertical-align: middle;
+    line-height: 1.5;
+    font-family: "Lato","Avenir",Arial,sans-serif;
+    font-weight: 0;
+   font-size: 15px;
+    
+}
+#content_header button{
+    width: 150px;height: 35px;
+    position: relative;
+    color: rgb(12, 12, 12);
+   float: right;
+    top: 18px;
+    border-radius: 25px;
+    background: transparent;
+    border: 0.5px solid white;
+    background: white;
+    font-weight: bolder;
+    font-size: 15px;
    
     
+}
+#logo{
+    left: 25px;
+    position: relative;
+    top: 15px;
+    width:150px;
+    height: 130px;
+   opacity: 0.5;
+   text-shadow: 0 0 50px #fff;
 }
 #logo img{
     width:100%;
     height: 100%;
+   
 }
 
 #title_logo{
@@ -376,19 +426,19 @@ header{
 }
  
 .menu{
-    width: 70%;
+    width: 50%;
     height: 50px;
-    
+  
     display: flex;
-   flex-wrap: wrap;
+   float: right;
     gap: 10%;
    justify-content: center;
-   margin-right: 10px;
+  transform: translateX(50%);
    position: relative;
-   top: 150px;
+   top: 50px;
    list-style: none;
    
-   
+   font-size: 17px;
 }
 .menu.active{
     display: flex;
@@ -629,14 +679,14 @@ header{
   
 #sorteos{
     position: relative;
-    width: 99%;
+    width: 100%;
     height: fit-content;
     background: #10f0dda3;
    display: flex;
    flex-direction: column;
    gap: 45px;
   padding-bottom: 25px;
-  border-radius: 120px 0px 120px 120px;
+  
   background-image: url("/img/23294.jpg");
   background-size: 100%;
   background-repeat: repeat;
@@ -646,8 +696,8 @@ header{
     text-decoration: none;
     color: rgb(250, 9, 17);
     position: relative;
-    float: right;
     
+    line-height: 0.8;
     font-size:100px;
    height: fit-content;
     font-family: 'Dancing Script', cursive;
@@ -672,9 +722,9 @@ header{
     position:relative;
     color: #f6f5f5;
    
-    width: fit-content;
+    width: 50%;
     top: 0;
-    left:5vw    ;
+    
 }
 
 #descuento{
@@ -687,10 +737,10 @@ header{
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 300px;
+    height: 230px;
   align-items: center;
   text-align: center;
-  top: 30px;
+  
   vertical-align: middle;
     
 }
@@ -708,12 +758,14 @@ header{
 }
 
 #sun{
-    --size: 100px;
-    --color: rgba(255, 0, 25, 0.592);
+    
+    --size: 90px;
+    --color: rgba(255, 0, 25, 0.625);
     position: absolute;
     box-shadow: 0 0 40px rgb(255, 38, 0);
     top: 45px;
-    right: 100px;
+    right: 80px;
+    float: right;
     transform:rotate(45deg);
     animation:beat 1s infinite alternate ease-in-out;
   }
@@ -784,7 +836,9 @@ header{
     width: 100%;
     height: fit-content;
     background: white;
-    margin-top: 65px;
+    margin-top: 35px;
+    position: relative;
+   
    
 }
 .container h2{
@@ -803,7 +857,7 @@ header{
 height:fit-content;
 display: flex;
 flex-wrap: wrap;
-flex-direction: row;
+flex-direction: column;
 gap: 15px;
 margin-top: 55px;
 justify-content: center;
@@ -814,75 +868,69 @@ height:fit-content;
 
 
 }
+
+.item_services:nth-child(2n){
+
+    flex-direction: row-reverse;
+}
 .item_services{
-width: 300px;
-height: 300px;
+width: 95%;
+height: 400px;
 position: relative;
 bottom: 0;
 display: flex;
-flex-direction: column;
-
+flex-direction: row;
+overflow-x: hidden;
+justify-content: center;
 }
-.item_services:hover~ .descrptiom_item{
 
-    background:white    ;
-    height: 250px;
-    transition: .5s ease-in;
-    border-radius: 5px;
-}
 .item_services img{
-  border-radius: 9px;
-    width: 100%;
+ 
+    width: 30%;
     height: 100%;
 }
+
+.item_services img:hover{
+
+opacity: 0.8;
+}
 .item_name{
-    width: 100%;
-    height: 60px;
-    background:rgb(25,118,210);
-    position: relative;
-    top: -15px;
-    border-radius: 9px;
-    text-align: center;
-   
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   overflow: hidden;
     
 }
-.item_name a{
+.item_name:hover{
+
+    background-color: #3f3b3b47;
+}
+.item_name h2{
     position: relative;
-    top: 15px;
+    
     text-decoration: none;
-    color: white;
+    color: rgb(68, 61, 61);
     text-align: center;
 }
-.item_name a:hover {
+.item_name h2:hover {
 color: blue;
 font-weight: bolder;
 
 }
+.item_name p{
+    position: relative;
+   top: 25px;
+    width: 70%;
+    line-height: 1.7;
+    font-size: 18px;
+}
 
-.item_name a:hover~ .descrptiom_item{
-    background:white    ;
-    height: 250px;
-    transition: .5s ease-in;
-    border-radius: 5px;
-    border: 1px solid black;
-    color: rgb(80, 79, 79);
-    }
-.descrptiom_item{
-position: absolute;
-    width: 100%;
-    height: 0px;
-   background: #10c7f0;
-   overflow: hidden;
-    z-index: 999;
-    top: 50px;
-   
-    color: rgb(80, 79, 79);
-}
-.descrptiom_item p{
-    text-align: center;
-    width: 90%;
-    padding: 8px;
-}
+
+
+
 
 #our_marcas{
 
@@ -1026,15 +1074,22 @@ box-shadow: 3px 3px 3px 1px rgba(219, 25, 25, 0.479);
     right: 10px;
     bottom: 20px;
     z-index: 99;
-    background:#1ebe41f0;
+    background:#f6f8f6f0;
    vertical-align: middle;
     text-decoration: none;
     font-size: 15px;
     padding-top:15px ;
     padding-bottom: 10px;
     text-align: center;
-    color: white;
+    color: rgb(9, 6, 6);
+    transition: 0.5s ease-in;
     
+}
+#whatsapp.normal{
+    
+    background:#1ebe41f0;
+    color: white;
+    transition: 0.5s ease-in;
 }
 #aboutus{
     display: flex;
@@ -1061,21 +1116,30 @@ box-shadow: 3px 3px 3px 1px rgba(219, 25, 25, 0.479);
    
 }
 
-
+   
 footer{
-
+    
     width: 100%;
     height:fit-content;
     background: black;
-    position: relative;
-    top: 25px;
+    position: fixed;
+    z-index: -1;
+    
+    bottom: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     padding-top:15px ;
+    --heigth:150px;
     
+}
+#space_foot{
+
+    width: 100%;
+    height: calc(250px);
+    background: transparent;
 }
 #redes_footer{
 width:300px ;
@@ -1162,7 +1226,42 @@ and (min-width: 120px)
 and (max-width: 856px)
 
 {
+    footer{
+
+        position: relative;
+    }
+   #content_header{
+
+    display: none;
+   }
+   .item_services.item_services:nth-child(2n){
+    
+    flex-direction: column-reverse;
    
+    }
+    .item_services img{
+
+        width: 80%;
+        height: 200px;
+    }
+    .item_name{
+        width: 100%;
+        height: 400px
+    }
+    .item_name p{
+        width: 100%;
+        padding: 5px;
+        text-align: justify;
+    }
+   .item_services{
+    align-items: center;
+    flex-direction: column-reverse;
+   height: fit-content;
+    }
+    #desc_about{
+
+        width: 80%;
+    }
     #sorteos p{
         position:relative;
         
@@ -1172,9 +1271,7 @@ and (max-width: 856px)
         font-size:75px;
     }
        
-    #sun{
-        right: 10px;
-    }
+    
     #info_head{
 
         display: none;
@@ -1199,8 +1296,8 @@ and (max-width: 856px)
     background-color: transparent;
 }
 #logo img{
-    width:60%;
-    height: 60%;
+    width:70%;
+    height: 70%;
 }
 header{
     
