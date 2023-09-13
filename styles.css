@@ -36,7 +36,9 @@ body:active  #bola_child{
     opacity: 1;
 }
 
-
+body{
+    background: #08090ae1;
+}
 
 #bola_child{
    width: 15px;
@@ -370,7 +372,7 @@ header{
     
     background-repeat: repeat-x;
    
-
+    z-index: 999;
 
  
 }
@@ -383,7 +385,7 @@ header{
     position:absolute;
     left: 155px;
     padding: 15px;
-    
+    z-index: 999;
 }
 #content_header h2{
     color: white;
@@ -880,9 +882,9 @@ header{
     width: 100%;
     height: fit-content;
     background: white;
-    margin-top: 35px;
+    margin-top: 10px;
     position: relative;
-   
+   z-index: 2;
    
 }
 .container h2{
@@ -904,7 +906,9 @@ flex-wrap: wrap;
 flex-direction: column;
 gap: 15px;
 margin-top: 55px;
-justify-content: center;
+
+align-items: center;
+
 }
 #cont_services{
 width: 100%;
@@ -918,14 +922,17 @@ height:fit-content;
     flex-direction: row-reverse;
 }
 .item_services{
-width: 95%;
+width: fit-content;
 height: 400px;
 position: relative;
 bottom: 0;
 display: flex;
 flex-direction: row;
-overflow-x: hidden;
+
 justify-content: center;
+box-shadow: 0px 5px 10px 5px rgba(58, 56, 56, 0.559);
+
+
 }
 
 .item_services img{
@@ -1181,10 +1188,12 @@ footer{
     
 }
 #space_foot{
-
+position: relative;
     width: 100%;
     height: calc(250px);
     background: transparent;
+    z-index: -5;
+    background: black;
 }
 #redes_footer{
 width:300px ;
@@ -1218,7 +1227,7 @@ font-family: "Rubik", Sans-serif;
     color:yellow;
    text-decoration: none;
     font-family: "Rubik", Sans-serif;
-    
+    cursor: pointer;
     
    
 }
@@ -1294,13 +1303,28 @@ and (max-width: 856px)
     }
     .item_services img{
 
-        width: 80%;
-        height: 200px;
+        width: 98%;
+        height: 230px;
+    }
+    .item_description{
+        height: 0px;
+        transition:0.5s ease-in;
     }
     .item_name{
         width: 100%;
-        height: 400px
+        height: fit-content;
+       
+        border-radius: 9px;
     }
+   
+    .item_title:hover~ .item_description{
+        
+        height: 380px;
+       transition:0.5s ease-in;
+       
+      
+    }
+  
     .item_name p{
         width: 100%;
         padding: 5px;
@@ -1354,7 +1378,7 @@ and (max-width: 856px)
 }
 header{
     
-    height: 250px;
+    height: 150px;
 }
    
 #bola{

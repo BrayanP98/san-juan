@@ -286,3 +286,8 @@ document.addEventListener("scroll", () => {
       }
     
   }*/
+  var item_name=document.getElementsByClassName("item_name");
+  item_name.onclick= function(){
+
+   console.log("www")
+  }
