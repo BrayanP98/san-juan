@@ -724,20 +724,20 @@ header{
     position: relative;
     width: 100%;
     height: fit-content;
-    background: #10f0dda3;
+    background: #10f0dd79;
    display: flex;
    flex-direction: column;
    gap: 45px;
   padding-bottom: 25px;
   
-  background-image: url("/img/23294.jpg");
+  background-image: url("");
   background-size: 100%;
   background-repeat: repeat;
   background-position:bottom;
 }
 #verano{
     text-decoration: none;
-    color: rgb(250, 9, 17);
+    color: rgb(226, 250, 9);
     position: relative;
     
     line-height: 0.8;
@@ -753,7 +753,7 @@ header{
     font-size: 40px;
     width: fit-content;
     top: 55px;
-    color: wheat;
+    color: rgb(4, 246, 32);
     view-timeline-name: --revealing-image;
     animation-name: imgshow;
     animation-fill-mode: backwards;
@@ -798,7 +798,7 @@ header{
     position: absolute;
     bottom: 50px;
     left: 20px;
-    color: #ecd9d9;
+    color: #080808;
     font-size: 13px;
 }
 #respuesta{
@@ -808,10 +808,10 @@ header{
 #sun{
     
     --size: 90px;
-    --color: rgba(255, 0, 25, 0.793);
+    --color: rgba(0, 81, 255, 0.949);
     position: absolute;
     
-    box-shadow: 0 0 40px rgb(255, 38, 0);
+    box-shadow: 0 0 40px  rgba(0, 81, 255, 0.793);
     top: 45px;
     right: 60px;
     float: right;
