@@ -126,47 +126,56 @@ let msg_body ="\nHola soy *SecuriBot*🤖 bot de San Juan Electronics, estoy aqu
 }
 
      
-/*send_whatsapp();
+//send_whatsapp();
     function send_whatsapp(){
       var botId = '122100131648008841';
-      var phoneNbr = '';
+      var phoneNbr = '573026055289';
       var bearerToken = 'EABpkYoLqZBZCYBOxobhn1EwbivIl4Uu1ecsawuwsDQgtJv8n7SVaqPsiBLJusnZBOM7SKdvAt4ZCJtxZCcrAS5n5dMbP3dhb0mzfM3nlSRV3KZBLBY07uq6HDuz6TJkyfTCwRwBJZCjvvOxuQ37M1LwuHZA2ge57k5cDTa2eVo1LPvROqctQPOIPJzdWlBjZCtykLqxdmTDzgTwRITK9T';
       
       var url = 'https://graph.facebook.com/v17.0/' + botId + '/messages';
     
-    /* var data= {
+    var data= {
+     
       "messaging_product": "whatsapp",
   "recipient_type": "individual",
   "to": phoneNbr,
   "type": "template",
   "template": {
-    "name": "vencido",
+    "name": "envio_recibo",
     "language": {
       "code": "es_MX"
     },
     "components": [
-
-      
-        {
-          "type": "body",
-          "parameters": [
-            {
-              "type": "text",
-              "text": "TEXT-STRING"
-            },
-            {
-              "type": "text",
-              "text": "TEXT-STRING"
-            },
-           
+      {
+        "type": "header",
+        "parameters": [
+          {
+            "type": "document",
+            "document": {
+              "link": "https://apiwhatsap-dev-nrcg.4.us-1.fl0.io/pdf/COTIZACION.pdf"
+            }
+          }
+        ]
+      },
+      {
+        "type": "body",
+        "parameters": [
+          {
+            "type": "text",
+            "text": "cotizacoin de equipos"
+          },
+         
           
-          ]},
-      
+        ]
+      }
     ]
+  }
+
+     
   
       }
     
-  }*/
+  
  /* var seccions=[  
   ]
   var utilities=
@@ -374,7 +383,7 @@ let msg_body ="\nHola soy *SecuriBot*🤖 bot de San Juan Electronics, estoy aqu
   
 
   
-
+      }
 
 /*for(var i=0;i<title.length;i++){
   let opt={

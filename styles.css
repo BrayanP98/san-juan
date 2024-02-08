@@ -724,16 +724,16 @@ header{
     position: relative;
     width: 100%;
     height: fit-content;
-    background: #10f0dd79;
+    background-image: url("./img/407033188_7240007256043210_27852.png");
    display: flex;
    flex-direction: column;
    gap: 45px;
   padding-bottom: 25px;
-  
-  background-image: url("");
-  background-size: 100%;
-  background-repeat: repeat;
-  background-position:bottom;
+ 
+  background-size: 35%;
+  background-color: #4cddea;
+  background-repeat: no-repeat;
+  background-position:80% ;
 }
 #verano{
     text-decoration: none;
@@ -885,6 +885,7 @@ header{
     margin-top: 10px;
     position: relative;
    z-index: 2;
+   padding-bottom: 15px;
    
 }
 .container h2{
@@ -1221,6 +1222,14 @@ padding: 5px;
 color: white;
 font-family: "Rubik", Sans-serif;
 
+}
+
+#foot_derechos{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    text-align: center;
+    color: white;
 }
 .contact_item{
    
