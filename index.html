@@ -287,11 +287,45 @@
 
 
        <section id="aboutus">
+
+        <div id="background"></div>
         <h2>Acerca de San Juan Electronics.</h2>
         <p id="desc_about">SAN JUAN ELECTRONICS| Tu Seguridad es nuestra prioridad.<br>
              Con 18 años de trayectoria en el territorio Caucano. Somos líderes en el mercado 
             en implementacion de soluciones de seguridad electrónica y tecnología.</p>
-           <!-- <form action="enviar.php" method="POST" id="form_contact">
+
+            <div id="div_contact">
+
+                <div id="info_contact">
+
+                 
+                   <div class="intem_contact">
+                    <box-icon class="contact_icon"name='edit-location' type='solid' color='white' ></box-icon>
+                    <div>
+                        <h4 class="title_item_contact">Sede Principal:</h4>
+                        <p>vía al bosque, Tv. 9 Nte. #57 N 202, Popayán, Cauca</p>
+                    </div>
+                   
+
+                   </div>
+                   <div class="intem_contact">
+                    <box-icon name='phone'class="contact_icon" color='white' ></box-icon>
+                    <div>
+                        
+                        <h4 class="title_item_contact">Telefonos:</h4>
+                        <p>3006549863 - 3026055289</p>
+                    </div>
+                   </div>
+                   <div class="intem_contact">
+                    
+                    <box-icon class="contact_icon"name='envelope'color='white' ></box-icon>
+                    <div>
+                        <h4 class="title_item_contact">Correo:</h4>
+                        <p>sanjuanelectronucs@gmail.com</p>
+                    </div>
+                   </div>
+                </div>
+         <form action="enviar.php" method="POST" id="form_contact">
                 <h2>Contactanos</h2>
                 <div class="input_cont">
                     <div class="input-group">
@@ -310,17 +344,91 @@
                           <label for="email">direccion</label>
                           <input type="email" id="email" name="email" required>
                         </div>
-                      <div class="input-group_mensaje">
+                      <div class="input-group">
                         <label for="mensaje">Mensaje</label>
                         <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
                       </div>
                 </div>
                 <button type="submit">Enviar</button>
-              </form>-->
+              </form>
+              </div>
 <style>
-    #form_contact{
+
+    #background{
+        background-color:  #0c0682ee;
+       opacity: 0.95;
+        height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    }
+       #div_contact{
+        width: 100%;
+        height: 400px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+       top: 30px;
+       background-color:  #0c0682ee;
+        bottom: 15px;
+       }
+       #div_contact h3{
+        width: 100%;
+        color: rgba(137, 135, 135, 0.948);
+        text-align: center;
+        font-size: 35px;
+       }
+    #info_contact{
         width: 50%;
-     
+       top: 35px;
+        height: 400px;
+        position: relative;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: end;
+      
+    }
+
+    .intem_contact{
+        position: relative;
+        width: 75%;
+        height: 100px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .intem_contact div{
+        width: 55%;
+    }
+    .intem_contact  box-icon{
+        
+        width: 80px;
+        height: 80px;
+    }
+    .intem_contact  P{
+        
+        color: rgba(137, 135, 135, 0.948);
+    }
+    .title_item_contact{
+
+        color: rgba(137, 135, 135, 0.948);
+        font-size: 28px;
+    }
+    #form_contact{
+        width: 40%;
+        position: absolute;
+        height: 500px;
+       position: relative;
+       right: 0;
+        background: white;
+        z-index: 11;
+        top: -55px;
+        
     }
 
    .input_cont{
@@ -346,7 +454,7 @@ position: relative;
   margin-bottom: 5px;
 }
 
-.input-group input {
+.input-group input,textarea {
   width: 100%;
   padding: 8px;
   border: 0;
@@ -385,7 +493,7 @@ button:hover {
 }
 
 </style>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d793.4773293367683!2d-76.58452643449817!3d2.4858194282732193!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e300312ea0e2aef%3A0x71e8ecb7c185ce79!2sSan%20Juan%20Electronics!5e0!3m2!1ses!2sco!4v1709585645883!5m2!1ses!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d793.4773293367683!2d-76.58452643449817!3d2.4858194282732193!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e300312ea0e2aef%3A0x71e8ecb7c185ce79!2sSan%20Juan%20Electronics!5e0!3m2!1ses!2sco!4v1709585645883!5m2!1ses!2sco"top="500px" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       
     </div>
     <section class="galeria">

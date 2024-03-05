@@ -1216,7 +1216,10 @@ box-shadow: 3px 3px 3px 1px rgba(219, 25, 25, 0.479);
   position: relative;
     width: 99%;
     height: fit-content;
-  
+    
+    background-image: url("https://demo.casethemes.net/consultio-agency/wp-content/uploads/2019/11/theme-14.jpg");
+    background-position: center center;
+    background-size: cover;
     text-align: center;
     justify-content: center;
     align-items: center;
