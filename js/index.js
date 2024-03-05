@@ -552,3 +552,34 @@ let msg_body ="\nHola soy *SecuriBot*🤖 bot de San Juan Electronics, estoy aqu
  // recognition.start()
 
 
+
+ function limpiar(){
+  var our_marcas=document.querySelector("#aliados")
+  var header=document.querySelector(".header")
+  var container=document.querySelector(".container");
+  var content_header=document.querySelector("#content_header")
+  var div_our_marcas=document.createElement("div")
+  div_our_marcas.className="our_marcas"
+  div_our_marcas.classList.add("active")
+  header.style="height:150px"
+
+  div_our_marcas.innerHTML=our_marcas.innerHTML
+  
+  content_header.style="visibility: hidden;"
+  container.innerHTML=""
+
+  container.appendChild(div_our_marcas)
+ 
+ }
+ function prinGallery(){
+  var header=document.querySelector(".header")
+  var container=document.querySelector(".container");
+  var content_header=document.querySelector("#content_header")
+  var galeria=document.querySelector(".galeria")
+  var div_galeria=document.createElement("div")
+  content_header.style="visibility: hidden;"
+  div_galeria.innerHTML=galeria.innerHTML
+  header.style="height:150px"
+  container.innerHTML=""
+  container.appendChild(div_galeria)
+ }

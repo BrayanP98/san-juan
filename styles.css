@@ -371,7 +371,7 @@ header{
     background-size:100% 100%;
     
     background-repeat: repeat-x;
-   
+   overflow: hidden;
     z-index: 999;
 
  
@@ -430,8 +430,8 @@ header{
     left: 25px;
     position: relative;
     top: 15px;
-    width:150px;
-    height: 130px;
+    width:100px;
+    height: 100px;
    opacity: 0.5;
    text-shadow: 0 0 50px #fff;
 }
@@ -882,7 +882,7 @@ header{
     width: 100%;
     height: fit-content;
     background: white;
-    margin-top: 10px;
+    top: -25px;
     position: relative;
    z-index: 2;
    padding-bottom: 15px;
@@ -898,6 +898,12 @@ header{
             
         
     
+}
+#sect_servicios{
+
+    position: relative;
+    top: 50px;
+
 }
 #sect_services{
     width: 100%;
@@ -984,8 +990,10 @@ font-weight: bolder;
 
 
 
-
-#our_marcas{
+#aliados{
+   display: none;
+}
+.our_marcas{
 
     width: 100%;
     height: fit-contents;
@@ -994,18 +1002,23 @@ font-weight: bolder;
     gap: 15px;
     border-bottom: 1px solid gray;
     justify-content: center;
+    
 }
-#our_marcas img{
+.our_marcas.active{
+visibility: visible;
+}
+.our_marcas img{
 
     width: 130px;
     height: 150px;
 }
 
-#galeria{
+.galeria{
     width: 100%;
     height: fit-content;
     position: relative;
    text-align: center;
+   display: none;
 
 
 }
@@ -1120,6 +1133,7 @@ font-weight: bolder;
 
 }
 #subir{
+    width: 50px;
 font-weight: bold;
 border: 0;
 background: transparent;
